@@ -1,0 +1,385 @@
+@import url(main.css);
+
+/* STYLES FOR THE CASE STUDIES */
+
+.case-study-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 80px;
+    h1 {
+        font-size: 4em;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1.38em;
+        text-align: center;
+        max-width: 750px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+}
+
+.case-study-body {
+    padding: 40px 80px;
+
+    h3 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 1.125em;
+    }
+
+    h1 {
+        font-weight: 600;
+        margin:0;
+        margin-top: 40px;
+    }
+}
+
+.text-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+
+    .left {
+        max-width: 350px;
+    }
+
+    .right {
+        max-width: 800px;
+    }
+}
+
+.screenshot-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 80px;
+
+    .left {
+        max-width: 800px;
+        margin-right: 80px;
+    }
+
+    .right {
+        max-width: 800px;
+    }
+}
+
+.stickies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 40px;
+
+    h4 {
+        font-size: 	1.375em;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    
+    div {
+        background-color: #F6EFC5;
+        border-radius: 2px;
+        border: solid 2px #D4AD50;
+        width: 300px;
+        padding: 24px;
+    }
+}
+
+.video-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.twoxtwo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    div {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    div:nth-child(even) {
+        border-left: solid 1px #C6C6C6;
+        padding: 0 24px 0 40px;
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+}
+
+.callout-UI-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #D3DDEE;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 0 0 40px;
+
+    p {
+        max-width: 700px;
+    }
+
+    img {
+        width: 586px;
+        height: auto;
+    }
+}
+
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 80px;
+   
+    p {
+        max-width: 700px;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+
+/* SCROLLBAR CSS */
+
+::-webkit-scrollbar {
+    width: 0px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      border-radius: 10px;
+      
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+  
+      border-radius: 10px;
+      padding: 8px 0;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+
+/* SCREENSHOT STYLING */
+
+
+.mobile-screenshot {
+    border-radius: 56px;
+    width: 300px;
+}
+
+.desktop-screenshot {
+    width: 500px;
+    border-radius: 12px;
+}
+
+.frame {
+    width: 300px; 
+    height: 600px; 
+    overflow-y: scroll; 
+    border: 8px solid black; /* Inner border */
+    box-shadow: 0 0 0 2px gray;
+
+  border-radius: 32px;
+}
+.frame img {
+    width: 100%;
+    display: block;
+}
+  
+    .mobile-screens {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  
+      div {
+          margin: 0 8px;
+      }
+    }
+  
+    .centered-image {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+    }
+  
+    .scroll-label {
+      width: 100px;
+      margin-right: 24px;
+      margin-left: -100px;
+    }
+    
+    @media screen and (max-width: 1600px) {
+      .scroll-label {
+          display: none;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .text-section {
+            .right {
+                max-width: 500px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .case-study-body {
+            padding: 24px 40px;
+        
+            h3 {
+                font-size: 1.75em;
+                font-weight: 600;
+                margin-top: 0;
+            }
+        
+            p {
+                font-size: 1em;
+            }
+        
+            h1 {
+                font-weight: 600;
+                margin:0;
+                margin-top: 40px;
+            }
+        }
+
+        .text-section {
+           flex-direction: column;
+           text-align: center;
+           align-items: center;
+        }
+
+        .callout-UI-section {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                margin-bottom: 40px;
+                width: 100%;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
+
+        .screenshot-section {
+            flex-direction: column;
+            align-items: center;
+
+            .desktop-screenshot {
+                margin: 40px;
+            }
+        }
+
+        .mobile-screens {
+            flex-direction: column;
+            align-items: center;
+
+            .frame {
+                margin: 24px;
+            }
+        }
+        .case-study-intro {
+        
+            h1 {
+                font-size: 3em;
+            }
+        
+            h2 {
+                font-size: 1em;
+            
+            }
+        
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .case-study-intro{
+            padding: 12px;
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+        
+        .case-study-body {
+            padding: 12px;
+        }
+        
+        .twoxtwo {
+         
+            flex-direction: column;
+
+            div {
+                padding: 0;
+            }
+
+            div:nth-child(even) {
+                border-left: none;
+                padding: 0;
+              
+            }
+        }
+
+        .screenshot-section {
+            .left {
+                margin: 0;
+            }
+        }
+
+        .callout-UI-section {
+            padding: 0px 12px;
+        }
+
+        .screenshot-section {
+        
+
+            .desktop-screenshot {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+   

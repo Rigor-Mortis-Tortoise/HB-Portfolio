@@ -1,0 +1,111 @@
+@import url(main.css);
+
+/* STYLES FOR THE HOMEPAGE */
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    padding: 0 80px;
+
+    h1 {
+        font-size: 4em;
+        font-weight: medium;
+    }
+
+    .intro-text {
+        max-width: 700px;
+    }
+
+    p {
+        font-size: 1.1Sem;
+    }
+
+    img {
+        max-width: 550px;
+    }
+}
+
+
+#projects{
+    .project {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 120px 0px 0px 80px;
+        position: relative;
+
+        .project-desc {
+            max-width: 550px;
+            padding-bottom: 40px;
+
+            h2, a {
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 	2.500em;
+                font-weight: bold;
+            }
+
+            a {
+                font-size: 1.375em;
+            }
+
+            .label {
+                margin-left: 18%;
+                margin-top: 16px;
+                margin-bottom: 64px;
+            }
+        }
+
+        img {
+            width: 500px;
+            height: auto;
+            padding-top: 80px;
+        
+        }
+    }
+
+    .project:hover {
+      
+    }
+
+    .project:nth-child(even) {
+        margin-top: -5%;
+        z-index: 1;
+
+        .label {
+            padding-top: 5%;
+        }
+        
+    }
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 80px;
+
+    img {
+        max-width: 500px;
+    }
+
+    .about-me-desc {
+        max-width: 550px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+

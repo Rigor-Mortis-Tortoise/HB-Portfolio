@@ -1,0 +1,66 @@
+/* MAIN STYLES */
+
+:root {
+    --background-color: #F4F4EA;
+    --font-color: #282828;
+    --coral: #F56A60;
+  }
+
+  html {
+    background-color: var(--background-color);
+  }
+
+  ::selection {
+    background: var(--coral);
+  }
+
+h1, h2, h3, h4, h5, p, a, ul, li {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--font-color);
+   }
+
+   h2 {
+    font-weight: 600;
+   }
+
+   p {
+    font-size: 1.2em;
+   }
+
+   br {
+    line-height: .4em;
+   }
+
+   hr {
+    height:1px;
+    border-width:0;
+    color:#C8C8C8;
+    background-color:#C8C8C8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+   }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 48px;
+    height: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
