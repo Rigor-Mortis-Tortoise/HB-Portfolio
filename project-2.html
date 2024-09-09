@@ -1,0 +1,227 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+    <title>Project 1</title>
+</head>
+
+
+<div style="background: rgb(96,138,245);
+background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 100%);">
+<header style>
+    <div>
+    <a href="main.html" style="margin-right: 24px;">Home</a>
+    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank">Resume</a>
+    </div>
+    <div>
+        <a href="mailto:holly96b@gmail.com">Email Me</a>
+    </div>
+ </header>
+
+
+ <div class="case-study-intro">
+    <h1>Lot Details</h1>
+    <h2>After interviewing 20+ dealers, we learned that our current experience wasn’t serving our audience.</h2>
+    <img src="Images/LDP/preview-image.png">
+ </div>
+</div>
+
+<div class="case-study-body">
+<div class="text-section">
+    <div class="left">
+        <h3>The Opportunity</h3>
+    </div>
+
+    <div class="right">
+        <p>Copart has traditionally been a salvage focused car business. However, salvage cars sell for significantly less than clean-titled, driveable cars. 
+
+            Pre-bids make up 80% of the final sale price. If we can enhance the dealer experience before the auction, we can increase the sale price of clean-titled cars and unlock the dealer market. </p>
+    </div>
+</div>
+<!--
+<h1>Goals</h1>
+<div class="stickies">
+    <div>
+        <h4>Design for All Buyers</h4>
+        <p>With multiple buyer personas and very different needs, the lot details page needs to suit everyone from the scrapper to the reseller.</p>
+    </div>
+
+    <div>
+        <h4>Stick with Familiar</h4>
+        <p>Some of our users have been using the Copart website for 30 years. Any small change on the page could be disruptive to their business. We chose to stick closer to familiar, but with some major upgrades.</p>
+    </div>
+
+    <div>
+        <h4>Empower Dealers to make Decisions Faster.</h4>
+        <p>Most of the information dealers need to be able to make a decision, we realized we already had, but because it was displayed poorly it caused our users to lose trust in Copart.</p>
+    </div>
+
+    <div>
+        <h4>Mobile Friendly, Accessible, and Responsive</h4>
+        <p>Many dealers are bidding on-the-go. It’s important for them to be able to bid easily from their mobile phones. </p>
+    </div>
+</div>
+-->
+<h1>Lot Details: Before</h1>
+<img src="Images/LDP/LDP-before.png" class="centered-image">
+
+<div class="twoxtwo">
+    <div>
+        <h2>Pain Points</h2>
+        <p><strong>Arbitration.</strong> Dealers didn't have a lot of confidence that if the car they bought didn't meet their expectations, that it would be easy to resolve.</p><br>
+        <p><strong>Vehicle History.</strong> While we did provide access to the vehicle's history, the history was limited and often took several clicks to get to the "meat" of the information. This caused dealers to think we were purposefully hiding information.</p><br>
+        <p><strong>Images.</strong> While other buyers don't prioritize vehicle photos, dealers do. (Who cares what the car looks like if I'm melting it down?) The default photo quality was SD, and damage was not marked on the photos even if it was present.</p>
+        <p><strong>Eligibility.</strong> As you could imagine, buying vehicles online can be complicated. From the documentation that we need to prevent fraud, to the legal requirements in each state, eligibility can be very confusing to users.</p>
+        <p><strong>Hidden Information.</strong> In our interviews, many of our users requested information that we already displayed. This led us to believe that we may need to present the information in a different way. </p>
+    </div>
+    <div>
+        <h2>Proposed Solution</h2>
+        <p><strong>Clear, Apparent Rules on Arbitration.</strong> We decided to display the condition of each vehicle clearly on the page, its definition and the nitty-gritty details on arbitration on every single lot page.</p><br>
+        <p><strong>Clearer History</strong> While we offered history reports, it was mostly through 3rd parties and referenced with confusing, non-standard terminology. We completely rethought the terminology and decided to display the most important aspects of the history on the page. </p>
+        <p><strong>High Quality Images on Load</strong> We implemented a system where HD images would be the default on load.</p>
+        <p><strong>Better insights on Eligibility</strong> Right before this project, we released updated error messages surrounding buying eligibility. But for this project, we made sure that the user's eligibility loaded on page load without them having to click anything.</p><br>
+        <p><strong>Better Information Architecture</strong> While we had access to the information that dealers wanted to see, we weren't showing them in the right places. We implemeted a structure to adhere to for the lot pages.</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="text-section">
+    <div class="left">
+        <h3>Research</h3>
+    </div>
+
+    <div class="right">
+        <p>Historically, Copart has made a name for themselves in the salvage market. However, there's a lot of untapped potential in the dealer space. Dealers are primarily looking to resell vehicles, which is vastly different than our existing audience who are looking to take apart vehicles and sell the parts. While we've understood the salvage buyer very well, we realized that we didn't understand the way that dealers bought at all. </p>
+        <p>Before starting this project at all, we interviewed 20+ dealers and compiled their feedback. What they told us reshaped the way we thought about dealers:</p>
+        <p>Their entire goal is to determine how much it would cost them to fix up a car to a buyer. At a minimum, the car has to drive, have keys, and a clean title. Secondly, the dealer has to figure out what exactly the damage is, if it matches with the information displayed, and how much that damage was going to cost. Thirdly, the dealer has to assess how much they can get for the car.</p>
+    </div>
+</div>
+<hr>
+<div class="text-section">
+    <div class="left">
+        <h3>Roleplay</h3>
+    </div>
+
+    <div class="right">
+        <p>Knowing this information, we had one of our more mechanically-inclined team members play the role of a dealer on our site. We had them try to go through one of our sale lists and determine which cars they would place a bid on. In doing this exercise, we identified a lot of the friction-points that needed to be resolved. Just going through 100 cars took several hours, and each car had at least 2 tabs that they had to open for each car.</p>
+        
+    </div>
+</div>
+</div>
+
+<div class="callout-UI-section">
+    <div>
+        <h2>Step 1: Remove Unneccessary and Distracting Information</h2>
+        <p>Too much information is no information, as conveyed in the <strong>Paradox of Choice.</strong> Many of the decisions that were made on the page weren't driven by data or user feedback, so we tried to remove all information that wasn't leading users to bid.</p>
+        <p>On this page, every bit of space is valuable real-estate. We decided to remove all advertisements, as they were distracting users from bidding and causing them to bounce from the page. We also removed all duplicate information, as that would cut down on the user's processing time. We also removed the vehicle alerts section after digging in and finding out that that widget only contributed to 1% of total alerts set up. While shipping is important, it felt disconnected so we decided to move it closer to the bidding box.</p>
+        <p>We also decided to remove the links at the bottom of the page, as we didn't want to provide any avenue for the user to bounce off of the page.</p>
+        
+    </div>
+
+    <div>
+        <img src="Images/LDP/LDP-remove.png">
+    </div>
+</div>
+
+<div class="case-study-body">
+    <div class="centered-section">
+        <h2>Vehicle History at a Glance</h2>
+        <p>After conducting our user interviews, it was clear that vehicle history played a major role in a dealer's decision. We had bits and pieces of historical information scattered around the page, but we took this opportunity to put them all in one place, showcasing the most important information on the main page. </p>
+        <p>To try and earn our user's trust back, we decided to offer free Copart Inspections for these types of vehicles, while also displaying the vehicle's history from other trusted sources.</p>
+        <img src="Images/LDP/History-view.png">
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Prioritizing Images</h2>
+            <p>When dealers are combing through vehicles, as the saying goes, a picture is worth a thousand words. If our inspectors say the engine works, they want to see the engine working. The more pictures, the more trust the user has.</p>
+            <p>We implemented a feature that would allow for users to be able to zoom in to twice the original image. High-quality images would be the default also, and not something the user has to select. This makes it so the user will be able to properly assess damage (and it doesn't look like we're trying to hid anything).</p>
+            <p>In addition, if we received data that there was damage on the vehicle, we associated the damage with the correct photo.</p>
+        </div>
+        <div class="right">
+            <img src="Images/LDP/ldp-image-flow.gif" class="desktop-screenshot">
+        </div>
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Straightforward Condition Information</h2>
+            <p>After interviewing with our dealers, we found out that a clearly outlined arbitration policy that would protect them was extremely important. Without it, dealers didn't feel comfortable buying through us.</p>
+            <p>Dealers also greatly trust the AutoGrade score when it comes to the condition of a vehicle. We decided to put all of this in one box on every lot page to reinforce trust.</p>
+           
+        </div>
+        <div class="right">
+            <img src="Images/LDP/condition.png" class="desktop-screenshot">
+        </div>
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Easy Refunds</h2>
+            <p>If users wanted to get a refund on their deposit, they would have to call our support team. It's also worth noting, that all Basic Members were <strong>required</strong> to submit a deposit to sign up for an account. This deposit could also not be used to apply to a vehicle, so it meant that 100% of users had to call our support team to get their money back. Deposits are 100% refundable, but it requires that users don't have any outstanding payments. Now, if a user wants a refund, it's just a click of a button.</p>
+            
+           
+        </div>
+        <div class="right">
+            <img src="Videos/refund-gif.gif" class="mobile-screenshot">
+        </div>
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Expand/Collapse Sections</h2>
+            <p>Before a user pays, they can take other actions, like viewing a detailed view of their invoice, or set up shipping.</p>
+            
+           
+        </div>
+        <div class="right">
+            <img src="Videos/expand-collapse-mobile.gif" class="mobile-screenshot">
+
+        </div>
+    </div>
+
+    <h1 style="margin-bottom: 24px;">Final Mobile Screens</h1>
+    
+
+    <div class="mobile-screens">
+        <img src="Images/Scroll!.png" style="width: 100px; margin-right: 24px; margin-left: -100px;">
+        <div class="frame">
+            <img src="Images/Payments/unpaid-invoices.png" alt="App Design">
+        </div>
+        <div class="frame">
+            <img src="Images/Payments/history.png" alt="App Design">
+        </div>
+        <div class="frame">
+            <img src="Images/Payments/Checkout-Mobile.png" alt="App Design">
+        </div>
+        <div class="frame">
+            <img src="Images/Payments/payments-confirmation.png" alt="App Design">
+        </div>
+    </div>
+
+
+
+
+
+<hr>
+<!-- RESULTS -->
+    <div class="text-section">
+        <div class="left">
+            <h3>Results</h3>
+        </div>
+    
+        <div class="right">
+            <p>Late Fees were reduced by 30%. This can be attributed to a couple of factors: Wider range of payment methods accepted, adding the due date as the first line item, and adding native payments to the mobile app.
+
+                Increased online payments from 40.25% to 60% as opposed to in-person payment methods. This eases friction for our users and for our yard workers.
+                
+                Overall phone calls around payments decreased significantly. </p><br>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,221 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+    <title>Project 1</title>
+</head>
+
+
+<div style="background: rgb(96,138,245);
+background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 100%);">
+<header style>
+    <div>
+    <a href="main.html" style="margin-right: 24px;">Home</a>
+    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank">Resume</a>
+    </div>
+    <div>
+        <a href="mailto:holly96b@gmail.com">Email Me</a>
+    </div>
+ </header>
+
+
+ <div class="case-study-intro">
+    <h1>Copart Payment Portal</h1>
+    <h2>Copart isn’t your typical e-commerce company. With the average purchase being around $4,000, how do we better serve business customers while offering flexibility?</h2>
+    <img src="Images/Payments/Payments.png">
+ </div>
+</div>
+
+<div class="case-study-body">
+<div class="text-section">
+    <div class="left">
+        <h3>The Opportunity</h3>
+    </div>
+
+    <div class="right">
+        <p>Buying cars online can be...challenging, and let’s face it, our existing experience wasn’t doing our users any favors. At the start of this project, calls to our Support team surrounding payments took a giant chunk of their resources. With Copart expanding into different markets, our customers expected more payment options and greater flexibility.</p>
+    </div>
+</div>
+
+<h1>Goals</h1>
+<div class="stickies">
+    <div>
+        <h4>Design for All Buyers</h4>
+        <p>With multiple buyer personas and very different needs, the payment portal needs to account for buyers who want to buy 1,000 cars at one time or 1.</p>
+    </div>
+
+    <div>
+        <h4>“Do no Harm”</h4>
+        <p>With limited data and information, it's important that all existing features and functionality stay in the experience. This combined with common UI patterns can provide an experience to users that is familiar and expected.</p>
+    </div>
+
+    <div>
+        <h4>Incorporate New Payment Methods</h4>
+        <p>In this redesign, Copart transitioned to Braintree and introduced new payment methods such as Apple Pay, Google Pay, and PayPal.</p>
+    </div>
+
+    <div>
+        <h4>Mobile Friendly, Accessible, and Responsive</h4>
+        <p>The Payments portal needs to be designed mobile-first, accessible, and align with the web experience.</p>
+    </div>
+</div>
+
+<h1>Payment Portal: Before</h1>
+
+<div class="video-section">
+<video width="700px" 
+height="500px" 
+controls="controls">
+<source src=
+"Images/payments-before.mov" 
+     type="video/mp4" />
+</video>
+</div>
+
+<div class="twoxtwo">
+    <div>
+        <h2>Pain Points</h2>
+        <p><strong>Deposit Navigation.</strong> Members had to call to request a refund, which was frustrating for them and for our Support team.</p><br>
+        <p><strong>Wire Transfers.</strong> The entire process was hand-written and manual, with the user having to track down the correct forms to use.</p><br>
+        <p><strong>No audit support.</strong> If a user is audited by the IRS, the history only goes back one year, which is not helpful.</p>
+        <p><strong>Not able to pay on Mobile</strong> Native payments and mobile responsive payments did not exist. </p>
+        <p><strong>Little support post-payment.</strong> Vehicle delivery was not accessible via the payment portal, and users were not given the option to select how they wanted their title received in this process. </p>
+    </div>
+    <div>
+        <h2>Proposed Solution</h2>
+        <p><strong>Online Refunds.</strong> Allow users to request a refund online, with clear indications as to how much they have in deposits/what's available to withdraw.</p><br>
+        <p><strong>Pre-filled Wire Transfer Forms.</strong> Allow users to prefill wire transfer information. Users can select what items they want to pay for with a wire transfer, and we prefill out the information that we need on our end.</p>
+        <p><strong>Payment History Page.</strong> Offer a history page so users have audit support and accurate records for their own business use.</p>
+        <p><strong>Mobile First.</strong> Design a "mobile first" payment portal. </p><br>
+        <p><strong>Delivery Statuses.</strong> Allow users to buy delivery within the portal and see statuses related to title and delivery.</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="text-section">
+    <div class="left">
+        <h3>Research</h3>
+    </div>
+
+    <div class="right">
+        <p>We conducted internal reviews involving cross-functional teams such as Operations, International, IT, Member Services, Email, and Business Intelligence. These assessments provided insights into our system dynamics and gaps. We also used survey data and prior user interviews to understand diverse buyer payment preferences.</p><br>
+        <p>Findings: High-volume buyers often preferred to use our API, and wanted to pay as fast as possible without combing through data. Other business buyers preferred to use their desktop computer and see the information laid out. Dealers preferred to use the mobile app exclusively.</p>
+        <p>We also documented the complex post-auction flows related to payment, shipping, and title transfer to identify friction points. (These have been removed from the portfolio) </p>
+    </div>
+</div>
+</div>
+
+<div class="callout-UI-section">
+    <div>
+        <h2>Internal Navigation for Desktop</h2>
+        <p>I implemented an internal payment navigation system with the strategic vision that it would serve as the central repository for all internal assets moving forward. </p>
+        <p>The primary objective behind this is to provide our users with a tailored viewing experience, prioritizing essential information and allowing them to access what is most relevant to their needs.</p>
+    </div>
+
+    <div>
+        <img src="Images/Payments/internal-nav.png">
+    </div>
+</div>
+
+<div class="case-study-body">
+    <div class="centered-section">
+        <h2>Table View for Desktop</h2>
+        <p>In alignment with our commitment to the 'Do No Harm' principle, we introduced a customized table view for the desktop version, aiming to maintain user familiarity.</p>
+        <p> The previous version presented usability challenges due to its cluttered interface and the limited visibility it offered on narrow screen sizes. To address this, we restructured the design by placing critical information in the top bar, while secondary details were made accessible through a collapsible menu.</p>
+        <img src="Images/Payments/table-view.png">
+        <img src="Images/Payments/table-expand.png" style="border-radius: 12px;">
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Improved Checkout Flow</h2>
+            <p>The previous experience didn't allow users to edit information inside of the checkout process. Additionally, vehicle shipping, title mailing, and payment preferences were handled outside of the portal, if at all. I wanted to implement a system that could handle all of that information simultaneously while adhering to common ecommerce platform experiences.</p>
+            <p>Previously, users reported difficulty with <strong>Title Mailing.</strong> Understandably, users have different preferences on how they would like to receive their vehicle titles. Some preferred to pick it up, some preferred to have it mailed, but most notably, some <strong>absolutely did not want it delivered by their transporter.</strong> It could get lost, overlooked, or lost in the shuffle.</p>
+        </div>
+        <div class="right">
+            <img src="Videos/payments-checkout.gif" class="mobile-screenshot">
+        </div>
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Easy Deposits</h2>
+            <p>Previously, if a user wanted to increase their deposit, they would have to use a separate deposit portal. They also weren't able to change or view the payment method used to make the payment. I put it in one screen, so that it would be easier to quickly make decisions. </p>
+            <p>We also use a lot of confusing terminology, but the functionality behind each is necessary. I tried to create visual hierarchy to distinguish between the different items so users could learn to differentiate.</p>
+           
+        </div>
+        <div class="right">
+            <img src="Videos/deposit.gif" class="mobile-screenshot">
+        </div>
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Easy Refunds</h2>
+            <p>If users wanted to get a refund on their deposit, they would have to call our support team. It's also worth noting, that all Basic Members were <strong>required</strong> to submit a deposit to sign up for an account. This deposit could also not be used to apply to a vehicle, so it meant that 100% of users had to call our support team to get their money back. Deposits are 100% refundable, but it requires that users don't have any outstanding payments. Now, if a user wants a refund, it's just a click of a button.</p>
+            
+           
+        </div>
+        <div class="right">
+            <img src="Videos/refund-gif.gif" class="mobile-screenshot">
+        </div>
+    </div>
+
+    <div class="screenshot-section">
+        <div class="left">
+            <h2>Expand/Collapse Sections</h2>
+            <p>Before a user pays, they can take other actions, like viewing a detailed view of their invoice, or set up shipping.</p>
+            
+           
+        </div>
+        <div class="right">
+            <img src="Videos/expand-collapse-mobile.gif" class="mobile-screenshot">
+
+        </div>
+    </div>
+
+    <h1 style="margin-bottom: 24px;">Final Mobile Screens</h1>
+    
+
+    <div class="mobile-screens">
+        <img src="Images/Scroll!.png" style="width: 100px; margin-right: 24px; margin-left: -100px;">
+        <div class="frame">
+            <img src="Images/Payments/unpaid-invoices.png" alt="App Design">
+        </div>
+        <div class="frame">
+            <img src="Images/Payments/history.png" alt="App Design">
+        </div>
+        <div class="frame">
+            <img src="Images/Payments/Checkout-Mobile.png" alt="App Design">
+        </div>
+        <div class="frame">
+            <img src="Images/Payments/payments-confirmation.png" alt="App Design">
+        </div>
+    </div>
+
+
+
+
+
+<hr>
+<!-- RESULTS -->
+    <div class="text-section">
+        <div class="left">
+            <h3>Results</h3>
+        </div>
+    
+        <div class="right">
+            <p>Late Fees were reduced by 30%. This can be attributed to a couple of factors: Wider range of payment methods accepted, adding the due date as the first line item, and adding native payments to the mobile app.
+
+                Increased online payments from 40.25% to 60% as opposed to in-person payment methods. This eases friction for our users and for our yard workers.
+                
+                Overall phone calls around payments decreased significantly. </p><br>
+            
+        </div>
+    </div>
+</div>
