@@ -21,6 +21,7 @@
 
     img {
         width: 100%;
+        max-width: 1000px;
         height: auto;
         margin-top: 40px;
     }
@@ -66,7 +67,7 @@
 .screenshot-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 80px;
 
