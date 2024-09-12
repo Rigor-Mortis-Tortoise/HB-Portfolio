@@ -170,7 +170,7 @@
     #projects{
      
         .project:nth-child(even) {
-            margin-top: -8%;
+            margin-top: -9%;
         }
 
         .project {
@@ -191,11 +191,22 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
     #projects{
      
         .project:nth-child(even) {
             margin-top: -10%;
         }
+    }
+
+    #introduction {
+        padding: 0 24px;
+        h1 {
+            font-size: 3em;
+        }
+    }
+
+    .about-me {
+        padding: 24px;
     }
 }
