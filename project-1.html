@@ -4,10 +4,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/casestudies.css">
+    <link rel="stylesheet" href="CSS/imagezoom.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="imagezoom.js"></script>
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+
     <title>Project 1</title>
 </head>
 
@@ -23,12 +26,13 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
         <a href="mailto:holly96b@gmail.com">Email Me</a>
     </div>
  </header>
+ 
 
 
  <div class="case-study-intro">
     <h1>Copart Payment Portal</h1>
     <h2>Copart isn’t your typical e-commerce company. With the average purchase being around $4,000, how do we better serve business customers while offering flexibility?</h2>
-    <img src="Images/Payments/Payments.png">
+    <img src="Images/Payments/Payments.png" class="zoomable">
  </div>
 </div>
 
@@ -39,7 +43,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
 
     <div class="right">
-        <p>Buying cars online can be...challenging, and let’s face it, our existing experience wasn’t doing our users any favors. At the start of this project, calls to our Support team surrounding payments took a giant chunk of their resources. With Copart expanding into different markets, our customers expected more payment options and greater flexibility.</p>
+        <p>Buying cars online can be...challenging. At the start of this project, calls to our Support team surrounding payments took a giant chunk of their resources. With Copart expanding into different markets, our customers expected more payment options and greater flexibility.</p>
     </div>
 </div>
 
@@ -120,7 +124,7 @@ controls="controls">
     </div>
 
     <div>
-        <img src="Images/Payments/internal-nav.png">
+        <img src="Images/Payments/internal-nav.png" class="zoomable">
     </div>
 </div>
 
@@ -129,8 +133,8 @@ controls="controls">
         <h2>Table View for Desktop</h2>
         <p>In alignment with our commitment to the 'Do No Harm' principle, we introduced a customized table view for the desktop version, aiming to maintain user familiarity.</p>
         <p> The previous version presented usability challenges due to its cluttered interface and the limited visibility it offered on narrow screen sizes. To address this, we restructured the design by placing critical information in the top bar, while secondary details were made accessible through a collapsible menu.</p>
-        <img src="Images/Payments/table-view.png">
-        <img src="Images/Payments/table-expand.png" style="border-radius: 12px;">
+        <img src="Images/Payments/table-view.png" class="zoomable">
+        <img src="Images/Payments/table-expand.png" style="border-radius: 12px;" class="zoomable">
     </div>
 
     <div class="screenshot-section">
@@ -220,6 +224,11 @@ controls="controls">
             
         </div>
     </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
 </div>
 
 <footer style="background-image: url(Images/footer.png);"></footer>

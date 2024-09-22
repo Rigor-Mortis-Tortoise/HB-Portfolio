@@ -2,13 +2,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/casestudies.css">
+    <link rel="stylesheet" href="CSS/imagezoom.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="imagezoom.js"></script>
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
-    <title>Project 1</title>
+    
+    <title>Project 2</title>
 </head>
 
 
@@ -28,7 +31,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
  <div class="case-study-intro">
     <h1>Lot Details</h1>
     <h2>After interviewing 20+ dealers, we learned that our current experience wasn’t serving our audience.</h2>
-    <img src="Images/LDP/preview-image.png">
+    <img src="Images/LDP/preview-image.png" class="zoomable">
  </div>
 </div>
 
@@ -41,7 +44,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     <div class="right">
         <p>Copart has traditionally been a salvage focused car business. However, salvage cars sell for significantly less than clean-titled, driveable cars. 
 
-            Pre-bids make up 80% of the final sale price. If we can enhance the dealer experience before the auction, we can increase the sale price of clean-titled cars and unlock the dealer market. </p>
+            "Pre-bids" placed on our Lot Details page make up 80% of the final sale price. If we can enhance the dealer experience before the live auction, we can increase the average sale price of clean-titled cars and unlock the dealer market. </p>
     </div>
 </div>
 <!--
@@ -69,7 +72,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 </div>
 -->
 <h1>Lot Details: Before</h1>
-<img src="Images/LDP/LDP-before.png" class="centered-image">
+<img src="Images/LDP/LDP-before.png" class="centered-image zoomable">
 
 <div class="twoxtwo">
     <div>
@@ -82,10 +85,10 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
     <div>
         <h2>Proposed Solution</h2>
-        <p><strong>Clear, Apparent Rules on Arbitration.</strong> We decided to display the condition of each vehicle clearly on the page, its definition and the nitty-gritty details on arbitration on every single lot page.</p><br>
+        <p><strong>Clear, Apparent Rules on Arbitration.</strong> We decided to display the condition of each vehicle clearly on the page, its definition and the nitty-gritty details on arbitration on every single lot page.</p>
         <p><strong>Clearer History</strong> While we offered history reports, it was mostly through 3rd parties and referenced with confusing, non-standard terminology. We completely rethought the terminology and decided to display the most important aspects of the history on the page. </p>
-        <p><strong>High Quality Images on Load</strong> We implemented a system where HD images would be the default on load.</p>
-        <p><strong>Better insights on Eligibility</strong> Right before this project, we released updated error messages surrounding buying eligibility. But for this project, we made sure that the user's eligibility loaded on page load without them having to click anything.</p><br>
+        <p><strong>High Quality Images on Load</strong> We implemented a system where HD images would be the default on load.</p><br><br><br><br>
+        <p><strong>Better insights on Eligibility</strong> Right before this project, we released updated error messages surrounding buying eligibility. But for this project, we made sure that the user's eligibility loaded on page load without them having to click anything.</p>
         <p><strong>Better Information Architecture</strong> While we had access to the information that dealers wanted to see, we weren't showing them in the right places. We implemeted a structure to adhere to for the lot pages.</p>
     </div>
 </div>
@@ -135,7 +138,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
 
     <div>
-        <img src="Images/LDP/LDP-remove.png">
+        <img src="Images/LDP/LDP-remove.png" class="zoomable">
     </div>
 </div>
 
@@ -144,7 +147,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
         <h2>Vehicle History at a Glance</h2>
         <p>After conducting our user interviews, it was clear that vehicle history played a major role in a dealer's decision. We had bits and pieces of historical information scattered around the page, but we took this opportunity to put them all in one place, showcasing the most important information on the main page. </p>
         <p>To try and earn our user's trust back, we decided to offer free Copart Inspections for these types of vehicles, while also displaying the vehicle's history from other trusted sources.</p>
-        <img src="Images/LDP/History-view.png">
+        <img src="Images/LDP/History-view.png" class="zoomable">
     </div>
 
     <div class="screenshot-section">
@@ -155,7 +158,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
             <p>In addition, if we received data that there was damage on the vehicle, we associated the damage with the correct photo.</p>
         </div>
         <div class="right">
-            <img src="Images/LDP/ldp-image-flow.gif" class="desktop-screenshot">
+            <img src="Images/LDP/ldp-image-flow.gif" class="desktop-screenshot zoomable">
         </div>
     </div>
 
@@ -167,7 +170,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
            
         </div>
         <div class="right">
-            <img src="Images/LDP/condition.png" class="desktop-screenshot">
+            <img src="Images/LDP/condition.png" class="desktop-screenshot zoomable">
         </div>
     </div>
 
@@ -194,22 +197,21 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
 -->
 
-
-
-<!--
 <hr>
- RESULTS 
     <div class="text-section">
         <div class="left">
             <h3>Results</h3>
         </div>
     
         <div class="right">
-            <p>This project is the first step of many to gaining the trust of... </p><br>
-            
+            <p>While we've seen some intial positive trends for the average sale price, we can't be certain how much the design of the page has impacted this number just yet. The sample size is small, so we'll need a few months of data (we have 2) to rule out any other variables. However, this is a major first step into unlocking the dealer market and gaining back user trust which will be crucial for our business moving forward. </p>
         </div>
     </div>
-    -->
+
+</div>
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
 </div>
 
 <footer style="background-image: url(Images/footer.png);"></footer>
