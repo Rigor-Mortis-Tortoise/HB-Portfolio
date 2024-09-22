@@ -7,9 +7,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 48px;
+    margin-top: 24px;
     margin-bottom: 40px;
-    padding: 0 80px;
+    padding: 0 80px 80px 80px;
 
     h1 {
         font-size: 4em;
@@ -25,7 +25,7 @@
     }
 
     img {
-        max-width: 550px;
+        /* max-width: 550px; */
     }
 }
 
@@ -46,7 +46,7 @@
             padding-bottom: 40px;
 
             h2, a {
-                text-transform: uppercase;
+                /* text-transform: uppercase; */
             }
 
             h2 {
@@ -55,7 +55,8 @@
             }
 
             a {
-                font-size: 1.375em;
+                font-size: 1.35em;
+                font-weight: 600;
             }
 
             .label {
@@ -109,10 +110,137 @@
     }
 }
 
+.holly-image {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin-bottom: 40px;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition-timing-function: ease-in-out;
+    }
+
+    .main-pic {
+        top: 23%;
+        right: 45px;
+        width: 80%;
+        scale: 0;
+    }
+
+    .main-pic:hover {
+        top: 20%;
+        right: 45px;
+        transform: rotate(-8deg);
+    }
+
+    .stars {
+        right: 0;
+        width: 90%;
+        top: 15%;
+        scale: 0;
+    }
+    .stars:hover {
+        top: 12%;
+    }
+
+
+    .star {
+        right: -14%;
+        width: 50%;
+        top: 73%;
+        scale: 0;
+    }
+    .star:hover {
+        top: 71%;
+        right: -16%;
+        transform: rotate(8deg);
+        
+    }
+
+    .background {
+        width: 115%;
+        scale: 0;
+    }
+    .background:hover {
+        top: -5%;
+    }
+
+    .peonies {
+        width: 45%;
+        right: 10%;
+        top: 10%;
+        scale: 0;
+    }
+
+    .bow {
+        top: 100%;
+        right: 16%;
+        width: 50%;
+        scale: 0;
+    }
+    .bow:hover {
+        top: 98%;
+        right: 12%;
+        transform: rotate(8deg);
+    }
+
+    .hair-flower {
+        top: 26%;
+        left: 23%;
+        width: 85px;
+        scale: 0;
+    }
+    .hair-flower:hover {
+        transform: rotate(180deg);
+    }
+    .pansy {
+        width: 65%;
+        right: 20%;
+        scale: 0;
+    }
+
+    .pansy:hover {
+        transform: rotate(360deg);
+    }
+
+    .leaves {
+        left: -4%;
+        top: 75%;
+        width: 60%;
+        scale: 0;
+    }
+
+    .leaves:hover {
+        top: 73%;
+        left: -8%;
+        transform: rotate(-8deg);
+        scale: 0;
+    }
+    }
+
+/* Effect six: Background color - Left to Right */
+.highlighter-effect {
+    padding: 0 5px;
+    box-shadow: inset 0 0 0 0 var(--coral);
+    transition: box-shadow 0.4s ease, color 0.4s ease;
+}
+
+.highlighter-effect:hover {
+    box-shadow: inset 300px 0 0 0 var(--coral);
+    color: #21242C;
+}
+
+
 @media screen and (max-width: 1440px) {
     #introduction {
         img {
-            max-width: 450px;
+            /* max-width: 450px; */
+        }
+
+        .intro-text {
+            max-width: 550px;
         }
     }
 
@@ -120,6 +248,11 @@
         img {
             max-width: 400px;
         }
+    }
+
+    .holly-image {
+        width: 450px;
+        height: 350px;
     }
 }
 
@@ -136,6 +269,20 @@
 }
 
 @media screen and (max-width: 1024px) {
+    p {
+        font-size: 1.15em;
+    }
+
+    .intro-text {
+        max-width: 500px;;
+    }
+
+    #introduction {
+        h1 {
+            font-size: 3.5em;
+        }
+    }
+    
     #projects{
         .project {
             flex-direction: column;
@@ -146,6 +293,18 @@
             margin-top: -10%;
         }
     }
+
+
+    .holly-image {
+        width: 350px;
+        height: 275px;
+
+        .hair-flower {
+            left: 19%;
+            width: 16%;
+        }
+        
+        }
 }
 
 @media screen and (max-width: 768px) {
@@ -160,6 +319,7 @@
 
         .intro-text {
             text-align: center;
+            margin-top: 48px;
         }
 
         h1 {
@@ -208,5 +368,9 @@
 
     .about-me {
         padding: 24px;
+    }
+
+    .holly-image {
+        width: 350px;
     }
 }

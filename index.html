@@ -2,11 +2,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/homepage.css">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
     <title>Holly Burleson Portfolio</title>
 </head>
@@ -15,11 +14,11 @@
 
 <header>
     <div>
-    <a href="index.html" style="margin-right: 24px;">Home</a>
-    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank">Resume</a>
+    <a href="index.html" style="margin-right: 24px;" class="highlighter-effect">Home</a>
+    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank" class="highlighter-effect">Resume</a>
     </div>
     <div>
-        <a href="mailto:holly96b@gmail.com">Email Me</a>
+        <a href="mailto:holly96b@gmail.com" class="highlighter-effect">Email Me</a>
     </div>
  </header>
 
@@ -28,11 +27,22 @@
     <div class="intro-text">
         <h1>Hi, I'm Holly.</h1>
         <p>Hey there! I’m Holly Burleson, a <strong>product designer </strong>and <strong>developer</strong> based out of <strong>Portland, Oregon</strong>. I’m currently leading the team at <strong>Copart (CPRT)</strong>.</p>
-        <p>When I’m not designing enterprise grade software, you’ll find me teaching and making games at <a href="https://www.rigormortistortoise.com/" target="_blank">Rigor Mortis Tortoise</a>.</p>
+        <p>When I’m not designing enterprise grade software, you’ll find me teaching games and making friends at <a href="https://www.rigormortistortoise.com/" target="_blank" class="highlighter-effect">Rigor Mortis Tortoise</a>.</p>
     </div>
 
     <div>
-        <img src="Images/HB-pic.png">
+        <div class="holly-image">
+            <img src="Images/Collage/leaves.png" style="z-index: 6;" class="leaves">
+            <img src="Images/Collage/hair-flower.png" style="z-index: 5;" class="hair-flower">
+            <img src="Images/Collage/star.png" style="z-index: 4;" class="star">
+            <img src="Images/Collage/bow.png" style="z-index: 3;" class="bow">
+            <img src="Images/Collage/me.png" style="z-index: 2;" class="main-pic">
+            <img src="Images/Collage/stars.png" style="z-index: 1;" class="stars">
+            <img src="Images/Collage/wing.png" style="z-index: 0;" class="background">
+            <img src="Images/Collage/pansy.png" style="z-index: -1;" class="pansy">
+            <img src="Images/Collage/peonies.png" style="z-index: -2;" class="peonies">
+            
+        </div>
     </div>
  </div>
 
@@ -44,7 +54,7 @@
 
         <h2>Payments Portal</h2>
         <p>Copart isn't your typical e-commerce company. With the average purchase being around $4,000, how do we serve our business customers while offering flexibility?</p>
-        <a href="project-1.html">View Case Study</a>
+        <a href="project-1.html" class="highlighter-effect">View Case Study</a>
     </div>
     <div class="hide-on-mobile">
         <img src="Images/Payments/payments-thumbnail.png">
@@ -57,7 +67,7 @@
 
         <h2>Lot Details</h2>
         <p>After interviewing 20+ dealers, we learned that our current expeience wasn’t serving our audience.</p>
-        <a href="project-2.html">View Case Study</a>
+        <a href="project-2.html" class="highlighter-effect">View Case Study</a>
     </div>
     <div class="hide-on-mobile">
         <img src="Images/LDP/LDP-thumbnail.png">
@@ -93,4 +103,91 @@
 
 </div>
 
- <footer style="background-image: url(Images/footer.png);"></footer>
+
+ <footer style="background-image: url(Images/footer.png);">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+    //gsap.to(".holly-image", {duration: 2, x:300, backgroundColor: "black", border: "5px solid white"});
+
+
+    gsap.set(".hair-flower", {
+        rotation: -270,
+    });
+
+        gsap.to(".hair-flower", {
+            scale: 1,
+            duration: .75,
+            delay: 1.25,
+            rotation: 0,
+        });
+
+    gsap.set(".leaves", {
+        rotation: -90,
+    });
+
+        gsap.to(".leaves", {
+            scale: 1,
+            duration: 1.25,
+            delay: .5,
+            rotation: 0,
+        });
+
+        gsap.set(".star", {
+        rotation: -90,
+    });
+
+        gsap.to(".star", {
+            scale: 1,
+            duration: 1,
+            delay: .4,
+            rotation: 0,
+        });
+
+        gsap.set(".stars", {
+        rotation: -45,
+    });
+        gsap.to(".stars", {
+            scale: 1,
+            duration: 1,
+            delay: .2,
+            rotation: 0,
+        });
+
+        gsap.to(".bow", {
+            scale: 1,
+            duration: 1.3,
+            delay: .3,
+        });
+
+        gsap.to(".pansy", {
+            scale: 1,
+            duration: 1,
+            delay: .2,
+            rotation: 180,
+        });
+
+        gsap.set(".main-pic", {
+        rotation: -15,
+    });
+
+        gsap.to(".main-pic", {
+            scale: 1,
+            duration: 1,
+            delay: .75,
+            rotation: 0,
+        });
+        gsap.to(".background", {
+            scale: 1,
+            duration: 1,
+            delay: .1,
+        });
+        gsap.to(".peonies", {
+            scale: 1,
+            duration: .75,
+        });
+
+
+    </script>
+
+
+ </footer>
