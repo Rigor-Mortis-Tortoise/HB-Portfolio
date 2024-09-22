@@ -133,6 +133,7 @@
         top: 20%;
         right: 45px;
         transform: rotate(-8deg);
+        filter: drop-shadow(16px 16px 20px var(--coral));
     }
 
     .stars {
@@ -143,8 +144,10 @@
     }
     .stars:hover {
         top: 12%;
+        mix-blend-mode: none;
+        filter: contrast(150%);
+        
     }
-
 
     .star {
         right: -14%;
@@ -156,7 +159,8 @@
         top: 71%;
         right: -16%;
         transform: rotate(8deg);
-        
+        -webkit-filter:  brightness(106%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+        filter:  brightness(100%)  grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
     }
 
     .background {
@@ -165,6 +169,7 @@
     }
     .background:hover {
         top: -5%;
+        filter: contrast(150%);
     }
 
     .peonies {
@@ -184,6 +189,7 @@
         top: 98%;
         right: 12%;
         transform: rotate(8deg);
+        filter: contrast(150%);
     }
 
     .hair-flower {
@@ -194,6 +200,8 @@
     }
     .hair-flower:hover {
         transform: rotate(180deg);
+        filter: contrast(200%);
+        top: 25%;
     }
     .pansy {
         width: 65%;
@@ -203,6 +211,7 @@
 
     .pansy:hover {
         transform: rotate(360deg);
+        filter: contrast(200%);
     }
 
     .leaves {
@@ -217,10 +226,11 @@
         left: -8%;
         transform: rotate(-8deg);
         scale: 0;
+        filter: contrast(200%);
     }
     }
 
-/* Effect six: Background color - Left to Right */
+/* Highlighter Hover Effect */
 .highlighter-effect {
     padding: 0 5px;
     box-shadow: inset 0 0 0 0 var(--coral);
