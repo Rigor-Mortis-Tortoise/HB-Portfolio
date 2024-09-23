@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="CSS/casestudies.css">
     <link rel="stylesheet" href="CSS/imagezoom.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="imagezoom.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
 
     <title>Project 1</title>
@@ -29,7 +30,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
  
 
 
- <div class="case-study-intro">
+ <div class="case-study-intro" data-aos="fade-up">
     <h1>Copart Payment Portal</h1>
     <h2>Copart isn’t your typical e-commerce company. With the average purchase being around $4,000, how do we better serve business customers while offering flexibility?</h2>
     <img src="Images/Payments/Payments.png" class="zoomable">
@@ -37,7 +38,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 </div>
 
 <div class="case-study-body">
-<div class="text-section">
+<div class="text-section" data-aos="fade-up">
     <div class="left">
         <h3>The Opportunity</h3>
     </div>
@@ -48,7 +49,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 </div>
 
 <h1>Goals</h1>
-<div class="stickies">
+<div class="stickies" data-aos="fade-up">
     <div>
         <h4>Design for All Buyers</h4>
         <p>With multiple buyer personas and very different needs, the payment portal needs to account for buyers who want to buy 1,000 cars at one time or 1.</p>
@@ -72,7 +73,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 
 <h1>Payment Portal: Before</h1>
 
-<div class="video-section">
+<div class="video-section" data-aos="fade-up">
 <video width="700px" 
 height="500px" 
 controls="controls">
@@ -82,7 +83,7 @@ controls="controls">
 </video>
 </div>
 
-<div class="twoxtwo">
+<div class="twoxtwo" data-aos="fade-up">
     <div>
         <h2>Pain Points</h2>
         <p><strong>Deposit Navigation.</strong> Members had to call to request a refund, which was frustrating for them and for our Support team.</p><br>
@@ -103,7 +104,7 @@ controls="controls">
 
 <hr>
 
-<div class="text-section">
+<div class="text-section" data-aos="fade-up">
     <div class="left">
         <h3>Research</h3>
     </div>
@@ -116,7 +117,7 @@ controls="controls">
 </div>
 </div>
 
-<div class="callout-UI-section">
+<div class="callout-UI-section" data-aos="fade-up">
     <div>
         <h2>Internal Navigation for Desktop</h2>
         <p>I implemented an internal payment navigation system with the strategic vision that it would serve as the central repository for all internal assets moving forward. </p>
@@ -129,7 +130,7 @@ controls="controls">
 </div>
 
 <div class="case-study-body">
-    <div class="centered-section">
+    <div class="centered-section" data-aos="fade-up">
         <h2>Table View for Desktop</h2>
         <p>In alignment with our commitment to the 'Do No Harm' principle, we introduced a customized table view for the desktop version, aiming to maintain user familiarity.</p>
         <p> The previous version presented usability challenges due to its cluttered interface and the limited visibility it offered on narrow screen sizes. To address this, we restructured the design by placing critical information in the top bar, while secondary details were made accessible through a collapsible menu.</p>
@@ -137,7 +138,7 @@ controls="controls">
         <img src="Images/Payments/table-expand.png" style="border-radius: 12px;" class="zoomable">
     </div>
 
-    <div class="screenshot-section">
+    <div class="screenshot-section" data-aos="fade-up">
         <div class="left">
             <h2>Improved Checkout Flow</h2>
             <p>The previous experience didn't allow users to edit information inside of the checkout process. Additionally, vehicle shipping, title mailing, and payment preferences were handled outside of the portal, if at all. I wanted to implement a system that could handle all of that information simultaneously while adhering to common ecommerce platform experiences.</p>
@@ -148,7 +149,7 @@ controls="controls">
         </div>
     </div>
 
-    <div class="screenshot-section">
+    <div class="screenshot-section" data-aos="fade-up">
         <div class="left">
             <h2>Easy Deposits</h2>
             <p>Previously, if a user wanted to increase their deposit, they would have to use a separate deposit portal. They also weren't able to change or view the payment method used to make the payment. I put it in one screen, so that it would be easier to quickly make decisions. </p>
@@ -160,7 +161,7 @@ controls="controls">
         </div>
     </div>
 
-    <div class="screenshot-section">
+    <div class="screenshot-section" data-aos="fade-up">
         <div class="left">
             <h2>Easy Refunds</h2>
             <p>If users wanted to get a refund on their deposit, they would have to call our support team. It's also worth noting, that all Basic Members were <strong>required</strong> to submit a deposit to sign up for an account. This deposit could also not be used to apply to a vehicle, so it meant that 100% of users had to call our support team to get their money back. Deposits are 100% refundable, but it requires that users don't have any outstanding payments. Now, if a user wants a refund, it's just a click of a button.</p>
@@ -172,7 +173,7 @@ controls="controls">
         </div>
     </div>
 
-    <div class="screenshot-section">
+    <div class="screenshot-section" data-aos="fade-up">
         <div class="left">
             <h2>Expand/Collapse Sections</h2>
             <p>Before a user pays, they can take other actions, like viewing a detailed view of their invoice, or set up shipping.</p>
@@ -188,7 +189,7 @@ controls="controls">
     <h1 style="margin-bottom: 24px;">Final Mobile Screens</h1>
     
 
-    <div class="mobile-screens">
+    <div class="mobile-screens" data-aos="fade-up">
         <img src="Images/Scroll!.png" style="width: 100px; margin-right: 24px; margin-left: -100px;">
         <div class="frame">
             <img src="Images/Payments/unpaid-invoices.png" alt="App Design">
@@ -210,7 +211,7 @@ controls="controls">
 
 <hr>
 <!-- RESULTS -->
-    <div class="text-section">
+    <div class="text-section" data-aos="fade-up">
         <div class="left">
             <h3>Results</h3>
         </div>
@@ -230,5 +231,9 @@ controls="controls">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="img01">
 </div>
+
+<script>
+    AOS.init();
+  </script>
 
 <footer style="background-image: url(Images/footer.png);"></footer>

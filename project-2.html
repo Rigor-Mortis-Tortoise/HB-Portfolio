@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="imagezoom.js"></script>
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
     
@@ -28,7 +30,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
  </header>
 
 
- <div class="case-study-intro">
+ <div class="case-study-intro" data-aos="fade-up">
     <h1>Lot Details</h1>
     <h2>After interviewing 20+ dealers, we learned that our current experience wasn’t serving our audience.</h2>
     <img src="Images/LDP/preview-image.png" class="zoomable">
@@ -36,7 +38,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 </div>
 
 <div class="case-study-body">
-<div class="text-section">
+<div class="text-section" data-aos="fade-up">
     <div class="left">
         <h3>The Opportunity</h3>
     </div>
@@ -71,10 +73,10 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
 </div>
 -->
-<h1>Lot Details: Before</h1>
-<img src="Images/LDP/LDP-before.png" class="centered-image zoomable">
+<h1 data-aos="fade-up">Lot Details: Before</h1>
+<img src="Images/LDP/LDP-before.png" class="centered-image zoomable" data-aos="fade-up">
 
-<div class="twoxtwo">
+<div class="twoxtwo" data-aos="fade-up">
     <div>
         <h2>Pain Points</h2>
         <p><strong>Arbitration.</strong> Dealers didn't have a lot of confidence that if the car they bought didn't meet their expectations, that it would be easy to resolve.</p><br>
@@ -95,7 +97,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 
 <hr>
 
-<div class="text-section">
+<div class="text-section" data-aos="fade-up">
     <div class="left">
         <h3>Research</h3>
     </div>
@@ -107,12 +109,12 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
 </div>
 <hr>
-<div class="centered-section">
+<div class="centered-section" data-aos="fade-up">
     <h2>User Flows</h2>
     <p>Documenting the pre-bidding process and all the possible avenues to the Lot Details page.</p>
     <img src="Images/LDP/LDP.jpg">
 </div>
-<div class="text-section">
+<div class="text-section" data-aos="fade-up">
     <div class="left">
         <h3>Roleplay</h3>
     </div>
@@ -133,7 +135,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 
 </div>
 
-<div class="callout-UI-section">
+<div class="callout-UI-section" data-aos="fade-up">
     <div>
         <h2>Step 1: Remove Unneccessary and Distracting Information</h2>
         <p>Too much information is no information, as conveyed in the <strong>Paradox of Choice.</strong> Many of the decisions that were made on the page weren't driven by data or user feedback, so we tried to remove all information that wasn't leading users to bid.</p>
@@ -143,19 +145,19 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     </div>
 
     <div>
-        <img src="Images/LDP/LDP-remove.png" class="zoomable">
+        <img src="Images/LDP/LDP-remove.png" class="zoomable" data-aos="fade-up">
     </div>
 </div>
 
 <div class="case-study-body">
-    <div class="centered-section">
+    <div class="centered-section" data-aos="fade-up">
         <h2>Vehicle History at a Glance</h2>
         <p>After conducting our user interviews, it was clear that vehicle history played a major role in a dealer's decision. We had bits and pieces of historical information scattered around the page, but we took this opportunity to put them all in one place, showcasing the most important information on the main page. </p>
         <p>To try and earn our user's trust back, we decided to offer free Copart Inspections for these types of vehicles, while also displaying the vehicle's history from other trusted sources.</p>
         <img src="Images/LDP/History-view.png" class="zoomable">
     </div>
 
-    <div class="screenshot-section">
+    <div class="screenshot-section" data-aos="fade-up">
         <div class="left">
             <h2>Prioritizing Images</h2>
             <p>When dealers are combing through vehicles, as the saying goes, a picture is worth a thousand words. If our inspectors say the engine works, they want to see the engine working. The more pictures, the more trust the user has.</p>
@@ -167,7 +169,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
         </div>
     </div>
 
-    <div class="screenshot-section">
+    <div class="screenshot-section" data-aos="fade-up">
         <div class="left">
             <h2>Straightforward Condition Information</h2>
             <p>After interviewing with our dealers, we found out that a clearly outlined arbitration policy that would protect them was extremely important. Without it, dealers didn't feel comfortable buying through us.</p>
@@ -203,7 +205,7 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
 -->
 
 <hr>
-    <div class="text-section">
+    <div class="text-section" data-aos="fade-up">
         <div class="left">
             <h3>Results</h3>
         </div>
@@ -218,5 +220,8 @@ background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 10
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="img01">
 </div>
+<script>
+    AOS.init();
+  </script>
 
 <footer style="background-image: url(Images/footer.png);"></footer>
