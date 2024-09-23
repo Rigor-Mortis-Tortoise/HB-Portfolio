@@ -148,6 +148,7 @@ h1, h2 {
 
     p {
         max-width: 700px;
+        font-size: 1.2em;
     }
 
     img {
@@ -165,7 +166,7 @@ h1, h2 {
     margin-bottom: 80px;
    
     p {
-        max-width: 700px;
+        max-width: 800px;
     }
 
     img {
