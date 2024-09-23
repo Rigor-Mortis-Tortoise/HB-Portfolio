@@ -133,7 +133,6 @@
         top: 20%;
         right: 45px;
         transform: rotate(-8deg);
-        filter: drop-shadow(16px 16px 20px var(--coral));
     }
 
     .stars {

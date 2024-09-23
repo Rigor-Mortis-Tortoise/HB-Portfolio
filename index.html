@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/homepage.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
     <title>Holly Burleson Portfolio</title>
@@ -14,20 +15,20 @@
 
 <header>
     <div>
-    <a href="index.html" style="margin-right: 24px;" class="highlighter-effect">Home</a>
-    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank" class="highlighter-effect">Resume</a>
+    <a href="index.html" style="margin-right: 24px;" class="highlighter-effect" data-aos="fade-up">Home</a>
+    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank" class="highlighter-effect" data-aos="fade-up">Resume</a>
     </div>
     <div>
-        <a href="mailto:holly96b@gmail.com" class="highlighter-effect">Email Me</a>
+        <a href="mailto:holly96b@gmail.com" class="highlighter-effect" data-aos="fade-up">Email Me</a>
     </div>
  </header>
 
 
  <div id="introduction">
     <div class="intro-text">
-        <h1>Hi, I'm Holly.</h1>
-        <p>Hey there! I’m Holly Burleson, a <strong>product designer </strong>and <strong>developer</strong> based out of <strong>Portland, Oregon</strong>. I’m currently leading the team at <strong>Copart (CPRT)</strong>.</p>
-        <p>When I’m not designing enterprise grade software, you’ll find me teaching games and making friends at <a href="https://www.rigormortistortoise.com/" target="_blank" class="highlighter-effect">Rigor Mortis Tortoise</a>.</p>
+        <h1 id="welcome-text" data-aos="fade-up">Hey, I'm Holly.</h1>
+        <p data-aos="fade-up">Hey there! I’m Holly Burleson, a <strong>product designer </strong>and <strong>developer</strong> based out of <strong>Portland, Oregon</strong>. I’m currently leading the team at <strong>Copart (CPRT)</strong>.</p>
+        <p data-aos="fade-up">When I’m not designing enterprise grade software, you’ll find me teaching games and making friends at <a href="https://www.rigormortistortoise.com/" target="_blank" class="highlighter-effect">Rigor Mortis Tortoise</a>.</p>
     </div>
 
     <div>
@@ -49,7 +50,7 @@
  <div id="projects">
 
     <!-- PAYMENTS-->
-<div class="project" style="background-image: url(Images/folder.svg);">
+<div class="project" style="background-image: url(Images/folder.svg);" data-aos="fade-up-right">
     <div class="project-desc">
 
         <h2>Payments Portal</h2>
@@ -62,7 +63,7 @@
 </div>
 
 <!-- LOT DETAILS-->
-<div class="project" style="background-image: url(Images/folder-2.svg);">
+<div class="project" style="background-image: url(Images/folder-2.svg);"data-aos="fade-up-right">
     <div class="project-desc">
 
         <h2>Lot Details</h2>
@@ -91,14 +92,14 @@
 
 <div class="about-me">
     <div>
-        <img src="Images/Stars.png" class="hide-on-mobile">
+        <img src="Images/Stars.png" class="hide-on-mobile" data-aos="zoom-in">
     </div>
     <div class="about-me-desc">
-        <h2>About Me</h2>
-        <p>I was born and raised in Dallas, TX. However, I’ve spent the last 3 years in <strong>Portland OR</strong> exploring the Pacific Northwest. I graduated the <strong>University of Texas at Dallas</strong> with a Bachelor's of Science in Marketing in 2019. In my free time you’ll find me gaming, teaching game development, or hanging in nature with my husband and Australian Sheppard. </p>
+        <h2 data-aos="fade-up">About Me</h2>
+        <p data-aos="fade-up">I was born and raised in Dallas, TX. However, I’ve spent the last 3 years in <strong>Portland OR</strong> exploring the Pacific Northwest. I graduated the <strong>University of Texas at Dallas</strong> with a Bachelor's of Science in Marketing in 2019. In my free time you’ll find me gaming, teaching game development, or hanging in nature with my husband and Australian Sheppard. </p>
         <br>
-        <h2>What I do</h2>
-        <p>In 2018 I took a marketing internship in the automotive industry, only to fall in love with product design. My internship ended, and I was hired as the second <strong>product designer at Copart</strong>. For the past several years, I’ve been supporting the member-facing experience for 750,000k+ members and growing the product team.</p>
+        <h2 data-aos="fade-up">What I do</h2>
+        <p data-aos="fade-up">In 2018 I took a marketing internship in the automotive industry, only to fall in love with product design. My internship ended, and I was hired as the second <strong>product designer at Copart</strong>. For the past several years, I’ve been supporting the member-facing experience for 750,000k+ members and growing the product team.</p>
     </div>
 
 </div>
@@ -106,10 +107,12 @@
 
  <footer style="background-image: url(Images/footer.png);">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     //gsap.to(".holly-image", {duration: 2, x:300, backgroundColor: "black", border: "5px solid white"});
 
-
+    AOS.init();
     gsap.set(".hair-flower", {
         rotation: -270,
     });
@@ -185,6 +188,9 @@
             scale: 1,
             duration: .75,
         });
+
+        //gsap.to("#welcome-text", {duration: 1, text: "Hey, I'm Holly.", delay: .5});
+        
 
 
     </script>
