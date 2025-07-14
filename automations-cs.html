@@ -1,0 +1,184 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/casestudies.css">
+    <link rel="stylesheet" href="CSS/imagezoom.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="imagezoom.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+
+    <title>Automations Case Study</title>
+</head>
+
+
+<div style="background: rgb(96,138,245);
+background: linear-gradient(180deg, rgba(96,138,245,1) 0%, rgba(96,138,245,0) 100%);">
+<header style>
+    <div>
+    <a href="index.html" style="margin-right: 24px;">Home</a>
+    <a href="Resume/Holly-Burleson-Resume.pdf" target="_blank">Resume</a>
+    </div>
+    <div>
+        <a href="mailto:holly96b@gmail.com">Email Me</a>
+    </div>
+ </header>
+ 
+
+
+ <div class="case-study-intro" data-aos="fade-up">
+    <h1>Automation Builder</h1>
+    <h2>How can we eliminate inefficiencies and human error by automating routine workflows?</h2>
+    <img src="Images/Automations/Automations-list.png" class="zoomable">
+ </div>
+</div>
+
+<div class="case-study-body">
+<div class="text-section" data-aos="fade-up">
+    <div class="left">
+        <h3>The Opportunity</h3>
+    </div>
+
+    <div class="right">
+        <p>Companies managing complex workflows or large volumes of repetitive tasks often struggle with inefficiencies, human error, and time-consuming manual processes. Without automation, teams waste valuable resources on tasks that could be streamlined—like onboarding users, assigning access, or managing notifications—leading to slower operations and inconsistent user experiences.</p> <br><br>
+        <p>With a customer commit and 3-month deadline, we aimed to launch an MVP version of automations and solve the 10 initial use cases provided by the customer.</p>
+    </div>
+</div>
+
+<!--
+<h1>Goals</h1>
+<div class="stickies" data-aos="fade-up">
+    <div>
+        <h4>Launch MVP for a client commit</h4>
+        <p>We had a 3 month deadline to release an initial version of automations. </p>
+    </div>
+
+    <div>
+        <h4>Solve 10 use cases</h4>
+        <p>Our client had 10 initial use cases that were areas of inefficiency. </p>
+    </div>
+
+    
+</div>
+
+-->
+
+<div class="twoxtwo" data-aos="fade-up">
+    <div>
+        <h2>Pain Points</h2>
+        <p><strong>Manual processes.</strong> Teams have to periodically review who has access to what, but the process is often spreadsheet-based or requires chasing down managers.</p><br><br><br><br><br>
+        <p><strong>Long onboarding times.</strong> New hires often wait days for the access they need to start working effectively.</p><br>
+        <p><strong>Department changes create risk.</strong> When employees leave or switch roles, old accounts or permissions may linger, increasing the attack surface.</p><br>
+        
+    </div>
+    <div>
+        <h2>Proposed Solution</h2>
+        <p><strong>Access reviews.</strong> An automation could trigger periodic access reviews based on a set schedule, notify the right reviewers, and auto-certify low-risk access (e.g., based on usage or tenure), reducing human effort and ensuring consistent review cycles.</p><br>
+        <p><strong>New hire.</strong> A new-hire automation could detect when a user joins via the HR system and automatically assign access based on department, role, or team—ensuring day-one productivity without manual setup.</p>
+        <p><strong>Deprovisioning.</strong> A deprovisioning automation could listen for termination events and immediately remove or disable access across all systems, preventing orphaned accounts from lingering.</p>
+   
+    </div>
+</div>
+
+<hr>
+
+<div class="text-section" data-aos="fade-up">
+    <div class="left">
+        <h3>Research</h3>
+    </div>
+
+    <div class="right">
+        <p>I conducted a competitive audit of leading identity platforms and automation tools to understand how others structure automation capabilities. This included analyzing trigger types, workflow builders, approval flows, and UI patterns across competitors. I documented strengths, usability gaps, and opportunities for differentiation, which helped inform both our feature prioritization and design direction.</p><br>
+        <p>Our product manager led multiple sessions with the client to uncover their pain points and goals. This discussion revealed key friction areas—such as time-consuming access reviews, onboarding delays, and a lack of visibility into entitlement changes. These insights gave us a clearer understanding of the client’s day-to-day challenges and where automation could drive the most impact. Together, this research gave us a strong foundation for designing an automation feature that felt both strategic and practical—tailored to real workflows, not just theoretical ones.</p>
+    </div>
+</div>
+</div>
+
+<div class="case-study-body">
+    <div class="centered-section" data-aos="fade-up">
+        <h2>Trigger and configuration</h2>
+        <p>Triggers are listeners or events that trigger an automation. We identified four main triggers that would cover a variety of use cases. </p>
+        <img src="Images/Automations/Triggers.png" class="zoomable">
+        <img src="Images/Automations/trigger-config.png" style="border-radius: 12px;" class="zoomable">
+    </div>
+
+    <!-- new section -->
+
+    <div class="screenshot-section" data-aos="fade-up">
+        <div class="left">
+            <h2>Adding steps</h2>
+            <p>Adding steps is a core part of the automation builder experience, giving users a clear, visual summary of what their automation will do. With around 10 step types at launch, we kept the selection simple—presenting a list with short descriptions for quick scanning. As the library of steps grows, we envision expanding this with categories, search, and filtering to maintain usability at scale.</p>
+           
+        </div>
+        <div class="right">
+            <img src="Images/Automations/Steps.png" class="desktop-screenshot zoomable">
+        </div>
+    </div>
+
+    <div class="screenshot-section" data-aos="fade-up">
+        <div class="left">
+            <h2>Conditions</h2>
+            <p>Because the automation builder is designed for flexibility, we introduced a conditional builder for triggers. This allows users to define more granular conditions—like tracking changes to a user’s department or job title—enabling more targeted and precise automations.</p>           
+        </div>
+        <div class="right">
+            <img src="Images/Automations/Conditional-builder.png" class="desktop-screenshot zoomable">
+        </div>
+    </div>
+
+    <div class="screenshot-section" data-aos="fade-up">
+        <div class="left">
+            <h2>Versioning</h2>
+            <p>To support safe iteration and continuous improvement, we introduced versioning for automations. Each time a workflow is edited and saved, a new version is created—allowing users to track changes over time, revert to previous versions, and maintain a clear audit trail. This gives teams the confidence to experiment and refine their automations without fear of breaking critical processes.</p>            
+           
+        </div>
+        <div class="right">
+            <img src="Images/Automations/Versioning.png" class="desktop-screenshot zoomable">
+            <p></p>
+        </div>
+    </div>
+
+    <div class="screenshot-section" data-aos="fade-up">
+        <div class="left">
+            <h2>Testing</h2>
+            <p>Visibility into automation health is critical for building trust and enabling iteration. To support this, we introduced clear status indicators and error messaging throughout the builder. Users can quickly identify where an automation failed and why, making it easier to debug, test, and improve their workflows with confidence.</p>
+            
+           
+        </div>
+        <div class="right">
+            <img src="Images/Automations/error-log.png" class="desktop-screenshot zoomable">
+
+        </div>
+    </div>
+
+
+
+
+
+<hr>
+<!-- RESULTS -->
+    <div class="text-section" data-aos="fade-up">
+        <div class="left">
+            <h3>Results</h3>
+        </div>
+    
+        <div class="right">
+            <p>We successfully shipped an MVP that met the core use cases requested by our initial customer. Shortly after launch, we expanded the feature set by adding more step types and introduced the ability to scope automations down to a specific application—giving customers greater flexibility and control.</p><br>
+            
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+
+<script>
+    AOS.init();
+  </script>
+
+<footer style="background-image: url(Images/footer.png);"></footer>
