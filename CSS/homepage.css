@@ -123,16 +123,17 @@
     }
 
     .main-pic {
-        top: 23%;
-        right: 45px;
+        top: 16%;
+        right: 72px;
         width: 80%;
         scale: 0;
     }
 
     .main-pic:hover {
-        top: 20%;
-        right: 45px;
+        top: 14%;
+        right: 72px;
         transform: rotate(-8deg);
+        filter: saturate(0%);
     }
 
     .stars {
